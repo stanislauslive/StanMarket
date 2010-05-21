@@ -1,0 +1,1 @@
+INSERT INTO template (template_id, template_name, thema) VALUES ('', 'smn_original', 'blue');

@@ -1,0 +1,13 @@
+Options +FollowSymLinks
+RewriteEngine On 
+RewriteBase /oscmall/
+
+RewriteRule ^(.*)-p-(.*)-sid-(.*).html$ product_info.php?products_id=$2&ID=$3&%{QUERY_STRING}
+RewriteRule ^(.*)-c-(.*)-sid-(.*).html$ index.php?cPath=$2&ID=$3&%{QUERY_STRING}
+RewriteRule ^(.*)-sl-(.*)-sid-(.*).html$ store_listing.php?sPath=$2&ID=$3&%{QUERY_STRING}
+RewriteRule ^(.*)-m-([0-9]+)-sid-(.*).html$ index.php?manufacturers_id=$2&ID=$3&%{QUERY_STRING}
+RewriteRule ^(.*)-pi-([0-9]+)-sid-(.*).html$ popup_image.php?pID=$2&ID=$3&%{QUERY_STRING}
+RewriteRule ^(.*)-pr-([0-9]+)-sid-(.*).html$ product_reviews.php?products_id=$2&ID=$3&%{QUERY_STRING}
+RewriteRule ^(.*)-pri-([0-9]+)-sid-(.*).html$ product_reviews_info.php?products_id=$2&ID=$3&%{QUERY_STRING}
+RewriteRule ^(.*)-prw-([0-9]+)-sid-(.*).html$ product_reviews_write.php?products_id=$2&ID=$3&%{QUERY_STRING}
+RewriteRule ^(.*)-i-([0-9]+)-sid-(.*).html$ information.php?info_id=$2&ID=$3&%{QUERY_STRING}

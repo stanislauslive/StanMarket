@@ -1,0 +1,44 @@
+/*
+  Copyright (c) 2002 - 2005 SystemsManager.Net
+
+  SystemsManager Technologies
+  oscMall System Version 4
+  http://www.systemsmanager.net
+  
+  Portions Copyright (c) 2002 osCommerce
+  
+  This source file is subject to version 2.0 of the GPL license,   
+  that is bundled with this package in the file LICENSE. If you
+  did not receive a copy of the oscMall System license and are unable 
+  to obtain it through the world-wide-web, please send a note to    
+  license@systemsmanager.net so we can mail you a copy immediately.
+*/
+
+/* links */
+a:link { font-family: Verdana, Arial, sans-serif; font-size: 10px; color: #FF9900; font-weight: normal; }
+a:hover { font-family: Verdana, Arial, sans-serif; font-size: 10px; color: #0000ff; font-weight: bold; }
+
+/* page */
+body { background-color: #ffffff; color: #000000; margin: 0px; }
+.pageHeading { font-family: Verdana, Arial, sans-serif; font-size: 12px; color: #727272; font-weight: bold; }
+
+/* data table */
+.dataTableHeadingRow { background-color: #C9C9C9; }
+.dataTableHeadingContent { font-family: Verdana, Arial, sans-serif; font-size: 10px; color: #000000; font-weight: bold; }
+.dataTableRow { background-color: #F0F1F1; }
+.dataTableRowSelected { background-color: #DEE4E8; }
+.dataTableRowOver { background-color: #FFFFFF; }
+.dataTableContent { font-family: Verdana, Arial, sans-serif; font-size: 10px; color: #000000; }
+
+/* attributes */
+.attributes-odd { background-color: #f4f7fd; }
+.attributes-even { background-color: #ffffff; }
+
+/* miscellaneous */
+.specialPrice { color: #ff0000; }
+.oldPrice { text-decoration: line-through; }
+.fieldRequired { font-family: Verdana, Arial, sans-serif; font-size: 10px; color: #ff0000; }
+.smallText { font-family: Verdana, Arial, sans-serif; font-size: 10px; }
+.main { font-family: Verdana, Arial, sans-serif; font-size: 11px; }
+.titleHeading {font-family: Verdana, Arial, sans-serif; font-size: 18px; color: #727272; font-weight: bold;
+}

@@ -1,0 +1,81 @@
+<?php
+/*
+  Copyright (c) 2002 - 2006 SystemsManager.Net
+
+  SystemsManager Technologies
+  oscMall System Version 4
+  http://www.systemsmanager.net
+  
+  Portions Copyright (c) 2002 osCommerce
+  
+  This source file is subject to version 2.0 of the GPL license,   
+  that is bundled with this package in the file LICENSE. If you
+  did not receive a copy of the oscMall System license and are unable 
+  to obtain it through the world-wide-web, please send a note to    
+  license@systemsmanager.net so we can mail you a copy immediately.
+*/
+
+
+  switch ($_GET['action']) {
+    case 'banner':
+      $banner_query = smn_db_query("select banners_url from " . TABLE_BANNERS . " where banners_id = '" . (int)$_GET['goto'] . "'");
+      if (smn_db_num_rows($banner_query)) {
+        $banner = smn_db_fetch_array($banner_query);
+        smn_update_banner_click_count($_GET['goto']);
+
+        smn_redirect($banner['banners_url']);
+      }
+      break;
+
+    case 'url':
+// systemsmanager begin - Dec 1, 2005 security patch		
+/*
+      if (isset($_GET['goto']) && smn_not_null($_GET['goto'])) {
+        smn_redirect('http://' . $_GET['goto']);
+      }
+*/
+if (isset($_GET['goto']) && smn_not_null($_GET['goto'])) {
+
+  $check_query = smn_db_query("select products_url from " . TABLE_PRODUCTS_DESCRIPTION . " where products_url = '" . smn_db_input($_GET['goto']) . "' limit 1");
+
+  if (smn_db_num_rows($check_query)) {
+
+    smn_redirect('http://' . $_GET['goto']);
+
+  }
+
+}
+// systemsmanager end
+      break;
+
+    case 'manufacturer':
+      if (isset($_GET['manufacturers_id']) && smn_not_null($_GET['manufacturers_id'])) {
+        $manufacturer_query = smn_db_query("select manufacturers_url from " . TABLE_MANUFACTURERS_INFO . " where manufacturers_id = '" . (int)$_GET['manufacturers_id'] . "' and languages_id = '" . (int)$languages_id . "'");
+        if (smn_db_num_rows($manufacturer_query)) {
+// url exists in selected language
+          $manufacturer = smn_db_fetch_array($manufacturer_query);
+
+          if (smn_not_null($manufacturer['manufacturers_url'])) {
+            smn_db_query("update " . TABLE_MANUFACTURERS_INFO . " set url_clicked = url_clicked+1, date_last_click = now() where manufacturers_id = '" . (int)$_GET['manufacturers_id'] . "' and languages_id = '" . (int)$languages_id . "'");
+
+            smn_redirect($manufacturer['manufacturers_url']);
+          }
+        } else {
+// no url exists for the selected language, lets use the default language then
+          $manufacturer_query = smn_db_query("select mi.languages_id, mi.manufacturers_url from " . TABLE_MANUFACTURERS_INFO . " mi, " . TABLE_LANGUAGES . " l where mi.manufacturers_id = '" . (int)$_GET['manufacturers_id'] . "' and mi.languages_id = l.languages_id and l.code = '" . DEFAULT_LANGUAGE . "'");
+          if (smn_db_num_rows($manufacturer_query)) {
+            $manufacturer = smn_db_fetch_array($manufacturer_query);
+
+            if (smn_not_null($manufacturer['manufacturers_url'])) {
+              smn_db_query("update " . TABLE_MANUFACTURERS_INFO . " set url_clicked = url_clicked+1, date_last_click = now() where manufacturers_id = '" . (int)$_GET['manufacturers_id'] . "' and languages_id = '" . (int)$manufacturer['languages_id'] . "'");
+
+              smn_redirect($manufacturer['manufacturers_url']);
+            }
+          }
+        }
+      }
+      break;
+  }
+
+  smn_redirect(smn_href_link(FILENAME_DEFAULT));
+?>

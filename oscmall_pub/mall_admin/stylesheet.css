@@ -1,0 +1,471 @@
+/*
+  Copyright (c) 2002 - 2005 SystemsManager.Net
+
+  SystemsManager Technologies
+  oscMall System Version 4
+  http://www.systemsmanager.net
+  
+  Portions Copyright (c) 2002 osCommerce
+  
+  This source file is subject to version 2.0 of the GPL license,   
+  that is bundled with this package in the file LICENSE. If you
+  did not receive a copy of the oscMall System license and are unable 
+  to obtain it through the world-wide-web, please send a note to    
+  license@systemsmanager.net so we can mail you a copy immediately.
+*/
+
+.boxText { font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 11px; }
+.errorBox { font-family : Tahoma, Arial, Helvetica, sans-serif; font-size : 11px; background: #003366; font-weight: bold; }
+.stockWarning { font-family : Tahoma, Arial, Helvetica, sans-serif; font-size : 11px; color: #003366; }
+.productsNotifications { background: #BEBE9E; }
+.orderEdit { font-family : Tahoma, Arial, Helvetica, sans-serif; font-size : 11px; color: #003366; text-decoration: underline; }
+
+BODY {
+  background: #FFFFFF;
+  color: #003366;
+  margin: 0px;
+  	SCROLLBAR-BASE-COLOR		: #003366;
+    SCROLLBAR-FACE-COLOR		: #003366;
+    SCROLLBAR-TRACK-COLOR		: #C7D2E3;
+    SCROLLBAR-ARROW-COLOR		: #C7D2E3;
+    SCROLLBAR-3DLIGHT-COLOR		: #222222;
+    SCROLLBAR-DARKSHADOW-COLOR	: #333333;
+    SCROLLBAR-HIGHLIGHT-COLOR	: default;
+    SCROLLBAR-SHADOW-COLOR		: #333333;
+}
+A {
+  color: #003366;
+  text-decoration: none;
+}
+
+A:hover {
+  color: #003366;
+  text-decoration: underline;
+}
+
+FORM {
+	display: inline;
+}
+
+TR.header {
+  background: #ffffff;
+}
+
+TR.headerNavigation {
+  background: #C7D2E3;
+}
+
+TD.headerNavigation {
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  background: #C7D2E3;
+  color: #003366;
+}
+
+A.headerNavigation { 
+  color: #003366; 
+}
+
+A.headerNavigation:hover {
+  color: #003366;
+}
+
+TR.headerError {
+  background: #003366;
+}
+
+TD.headerError {
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  background: #003366;
+  color: #ffffff;
+  text-align : center;
+}
+
+TR.headerInfo {
+  background: #003366;
+}
+
+TD.headerInfo {
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  background: #003366;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+TR.footer {
+  background: #003366;
+}
+
+TD.footer {
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  background: #003366;
+  background-image: url(images/bottom_back.jpg);
+  color: #003366;
+}
+
+TD.footerText {
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  background: #C7D2E3;
+  color: #003366;
+}
+
+.infoBox {
+  background: #C7D2E3;
+}
+
+.infoBox2 {
+  background: #C7D2E3;
+}
+
+.infoBox3 {
+  background: #FFFFFF;
+}
+
+.infoBoxContents {
+  background: #FFFFFF;
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+}
+
+.infoBoxContents2 {
+  background: #FFFFFF;
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+}
+
+.infoBoxContents3 {
+  background: #FFFFFF;
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+}
+
+.infoBoxContents4 {
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+}
+
+.infoBoxNotice {
+  background: #003366;
+}
+
+.infoBoxNoticeContents {
+  background: #FFFFFF;
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+}
+
+TD.infoBoxHeading {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #003366;
+	background-color: #003366;
+	background-image: url(images/infobox/background.jpg);
+
+}
+
+TD.infoBoxHeading2 {
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  background: #003366;
+  color: #ffffff;
+  background-image: url(images/infobox/background2.jpg);
+}
+
+TD.infoBoxHeading3 {
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  background: #003366;
+  color: #003366;
+  background-image: url(images/infobox/background.jpg);
+}
+
+.infoBoxHeading4 {
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #003366;
+}
+
+TD.infoBox, TD.infoBox2, SPAN.infoBox {
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+}
+
+TR.accountHistory-odd, TR.addressBook-odd, TR.alsoPurchased-odd, TR.payment-odd, TR.productListing-odd, TR.productReviews-odd, TR.upcomingProducts-odd, TR.shippingOptions-odd {
+  background: #FFFFFF;
+}
+
+TR.accountHistory-even, TR.addressBook-even, TR.alsoPurchased-even, TR.payment-even, TR.productListing-even, TR.productReviews-even, TR.upcomingProducts-even, TR.shippingOptions-even {
+  background: #ECF0EE;
+}
+
+TABLE.productListing {
+  border: 1px;
+  border-style: solid;
+  border-color: #C7D2E3;
+  border-spacing: 1px;
+}
+
+.productListing-heading {
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  background: #003366;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+TD.productListing-data {
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+}
+
+A.pageResults {
+  color: #003366;
+}
+
+A.pageResults:hover {
+  color: #003366;
+  background: #FFFFFF;
+}
+
+TD.pageHeading, DIV.pageHeading {
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #003366;
+}
+
+TR.subBar {
+  background: #C7D2E3;
+}
+
+TD.subBar {
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #003366;
+}
+
+TD.main, P.main {
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+TD.smallText, SPAN.smallText, P.smallText {
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 10px;
+}
+
+TD.accountCategory {
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #003366;
+}
+
+TD.fieldKey {
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+TD.fieldValue {
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+}
+
+TD.tableHeading {
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+SPAN.newItemInCart {
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  color: #003366;
+}
+
+CHECKBOX, INPUT, RADIO, SELECT {
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+}
+
+TEXTAREA {
+  width: 100%;
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+}
+
+SPAN.greetUser {
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #003366;
+  font-weight: bold;
+}
+
+TABLE.formArea {
+  background: #C7D2E3;
+  border-color: #003366;
+  border-style: solid;
+  border-width: 1px;
+}
+
+TD.formAreaTitle {
+  font-family: Tahoma, Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+SPAN.markProductOutOfStock {
+  font-family: Tahoma, Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #003366;
+  font-weight: bold;
+}
+
+SPAN.productSpecialPrice {
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  color: #003366;
+}
+
+SPAN.errorText {
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  color: #003366;
+}
+
+.moduleRow { }
+.moduleRowOver { background-color: #003366; cursor: pointer; cursor: hand; }
+.moduleRowSelected { background-color: #C7D2E3; }
+
+.checkoutBarFrom, .checkoutBarTo { font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 10px; color: #003366; }
+.checkoutBarCurrent { font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 10px; color: #003366; }
+
+/* message box */
+
+.messageBox { font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 10px; }
+.messageStackError, .messageStackWarning { font-family: Tahoma, Arial, Helvetica, sans-serif; color: #003366; font-size: 10px; background-color: #C7D2E3; }
+.messageStackSuccess { font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 10px; background-color: #C7D2E3; }
+
+/* input requirement */
+
+.inputRequirement { font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 10px; color: #003366; }
+.p {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-decoration: none;
+}
+.copyright2 {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	font-size: 10px;
+}
+A.copyright2 { 
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+A.copyright2:visited { 
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+A.copyright2:hover { 
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+/* ----------------- coolMenu ----------------- */
+
+.clCMEvent{
+	position:absolute;
+	width:99%; height:99%;
+	clip:rect(0,100%,100%,0);
+	left:0; 
+	top:0;
+	visibility:visible
+}
+
+
+.clCMAbs{
+	position:absolute;
+	visibility:hidden;
+	left:0;
+	top:0;
+}
+
+.clBar{
+	position:absolute;
+	width:10;
+	height:10;
+	background-color:#ffffff;
+	layer-background-color:#ffffff;
+	visibility:hidden;
+}
+
+.clLevel0,.clLevel0over{
+	position:absolute;
+	padding:1px;
+	font-family:Tahoma,arial,helvetica;
+	font-size:10px;
+}
+
+.clLevel0{
+	background-color:#ffffff;
+	layer-background-color:#ffffff;
+	color:#000000;
+}
+
+.clLevel0over{
+	background-color:#bbc3d3;
+	layer-background-color:#bbc3d3;
+	color:#ffffff;
+	cursor:pointer;
+	cursor:hand;
+}
+
+.clLevel0border{
+	position:absolute;
+	visibility:hidden;
+	background-color:#c0c0c0;
+	layer-background-color:white;
+}
+
+.clLevel1, .clLevel1over{
+	position:absolute;
+	padding:2px;
+	font-family:Tahoma,arial,helvetica;
+	font-size:10px;
+}
+
+.clLevel1{
+	background-color:#ffffff;
+	layer-background-color:#ffffff;
+	color:#000000;
+}
+
+.clLevel1over{
+	background-color:#bbc3d3;
+	layer-background-color:#bbc3d3;
+	color:#ffffff;
+	cursor:pointer;
+	cursor:hand;
+}
+
+.clLevel1border{
+	position:absolute;
+	visibility:hidden;
+	background-color:#c0c0c0;
+	layer-background-color:white;
+}
+/* ----------------- coolMenu_eof ----------------- */
+
+// Categories Description
+TD.category_desc {
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 11px;
+  line-height: 1.5;
+}

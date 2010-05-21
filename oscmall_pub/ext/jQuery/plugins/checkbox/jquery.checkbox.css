@@ -1,0 +1,57 @@
+/* Default Theme - BEGIN */
+.jquery-checkbox-default       {display: inline;}
+.jquery-checkbox-default-box   {display: inline; font-size: 20px; line-height: 20px; cursor: pointer; cursor: hand;}
+.jquery-checkbox-default .mark {display: inline;}
+
+.jquery-checkbox-default img {vertical-align: middle; width: 60px; height: 20px;}
+.jquery-checkbox-default img{background: transparent url(themes/default/checkbox.png) no-repeat;}
+
+.jquery-checkbox-default img{
+	background-position: 0px 0px;
+}
+.jquery-checkbox-default-hover img{
+	background-position: 0px -20px;
+}
+.jquery-checkbox-default-checked .jquery-checkbox-default img{
+	background-position: 0px -40px;
+}
+.jquery-checkbox-default-checked .jquery-checkbox-default-hover img {
+	background-position: 0px -60px;
+}
+
+.jquery-checkbox-default-disabled img{
+	background-position: 0px -80px;
+}
+.jquery-checkbox-default-checked .jquery-checkbox-default-disabled img{
+	background-position: 0px -100px;
+}
+/* Default Theme - END */
+
+/* Safari Theme - BEGIN */
+.jquery-checkbox-safari       {display: inline;}
+.jquery-checkbox-safari-box   {display: inline; font-size: 16px; line-height: 16px; cursor: pointer; cursor: hand;}
+.jquery-checkbox-safari .mark {display: inline;}
+
+.jquery-checkbox-safari img {vertical-align: middle; width: 16px; height: 16px;}
+.jquery-checkbox-safari img{background: transparent url(themes/safari/checkbox.png) no-repeat;}
+
+.jquery-checkbox-safari img{
+	background-position: 0px 0px;
+}
+.jquery-checkbox-safari-hover img{
+	background-position: -16px 0px;
+}
+.jquery-checkbox-safari-checked .jquery-checkbox-safari img{
+	background-position: 0px -16px;
+}
+.jquery-checkbox-safari-checked .jquery-checkbox-safari-hover img {
+	background-position: -16px -16px;
+}
+
+.jquery-checkbox-safari-disabled img{
+	background-position: 0px -32px;
+}
+.jquery-checkbox-safari-checked .jquery-checkbox-safari-disabled img{
+	background-position: 0px -48px;
+}
+/* Safari Theme - END */

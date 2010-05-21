@@ -1,0 +1,160 @@
+button { 
+    border:0; 
+    cursor:pointer; 
+    font-weight:bold; 
+    padding:0 15px 0 0; 
+    text-align:center; 
+    overflow: visible;
+    width: auto;
+    margin: 0px;
+}
+button span { 
+    display:block; 
+    white-space:nowrap; 
+    padding:0 0 0 15px;
+    margin: 0px;
+}
+
+/*black buttons*/
+button.jQuery-button_black { 
+    background:url('black/button_right.png') right no-repeat; 
+}
+button.jQuery-button_black span { 
+    font-size:12px; 
+    height:25px; 
+    line-height:25px;
+    color:#fff; 
+    background:url('black/button_left.png') left no-repeat;
+}
+button.jQuery-button_black:hover, button.jQuery-button_black_hover {
+	background:url('black/button_right_over.png') right no-repeat; 
+}
+button.jQuery-button_black:hover span, button.jQuery-button_black_hover span {
+	background:url('black/button_left_over.png') left no-repeat; 
+}
+button.jQuery-button_black:active, button.jQuery-button_black_down {
+	background:url('black/button_right_down.png') right no-repeat; 
+}
+button.jQuery-button_black:active span, button.jQuery-button_black_down span {
+	background:url('black/button_left_down.png') left no-repeat; 
+}
+
+/*blue buttons*/
+button.jQuery-button_blue { 
+    background:url('blue/button_right.png') right no-repeat; 
+}
+button.jQuery-button_blue span { 
+    font-size:12px; 
+    height:25px; 
+    line-height:25px;
+    color:#fff; 
+    background:url('blue/button_left.png') left no-repeat;
+}
+button.jQuery-button_blue:hover, button.jQuery-button_blue_hover {
+	background:url('blue/button_right_over.png') right no-repeat; 
+}
+button.jQuery-button_blue:hover span, button.jQuery-button_blue_hover span {
+	background:url('blue/button_left_over.png') left no-repeat; 
+}
+button.jQuery-button_blue:active, button.jQuery-button_blue_down {
+	background:url('blue/button_right_down.png') right no-repeat; 
+}
+button.jQuery-button_blue:active span, button.jQuery-button_blue_down span {
+	background:url('blue/button_left_down.png') left no-repeat; 
+}
+
+/*green buttons*/
+button.jQuery-button_green { 
+    background:url('green/button_right.png') right no-repeat; 
+}
+button.jQuery-button_green span { 
+    font-size:12px; 
+    height:25px; 
+    line-height:25px;
+    color:#fff; 
+    background:url('green/button_left.png') left no-repeat;
+}
+button.jQuery-button_green:hover, button.jQuery-button_green_hover {
+	background:url('green/button_right_over.png') right no-repeat; 
+}
+button.jQuery-button_green:hover span, button.jQuery-button_green_hover span {
+	background:url('green/button_left_over.png') left no-repeat; 
+}
+button.jQuery-button_green:active, button.jQuery-button_green_down {
+	background:url('green/button_right_down.png') right no-repeat; 
+}
+button.jQuery-button_green:active span, button.jQuery-button_green_down span {
+	background:url('green/button_left_down.png') left no-repeat; 
+}
+
+/*olive buttons*/
+button.jQuery-button_olive { 
+    background:url('olive/button_right.png') right no-repeat; 
+}
+button.jQuery-button_olive span { 
+    font-size:12px; 
+    height:25px; 
+    line-height:25px;
+    color:#000; 
+    background:url('olive/button_left.png') left no-repeat;
+}
+button.jQuery-button_olive:hover, button.jQuery-button_olive_hover {
+	background:url('olive/button_right_over.png') right no-repeat; 
+}
+button.jQuery-button_olive:hover span, button.jQuery-button_olive_hover span {
+	background:url('olive/button_left_over.png') left no-repeat; 
+}
+button.jQuery-button_olive:active, button.jQuery-button_olive_down {
+	background:url('olive/button_right_down.png') right no-repeat; 
+}
+button.jQuery-button_olive:active span, button.jQuery-button_olive_down span {
+	background:url('olive/button_left_down.png') left no-repeat; 
+}
+
+/*red buttons*/
+button.jQuery-button_red { 
+    background:url('red/button_right.png') right no-repeat; 
+}
+button.jQuery-button_red span { 
+    font-size:12px; 
+    height:25px; 
+    line-height:25px;
+    color:#fff; 
+    background:url('red/button_left.png') left no-repeat;
+}
+button.jQuery-button_red:hover, button.jQuery-button_red_hover {
+	background:url('red/button_right_over.png') right no-repeat; 
+}
+button.jQuery-button_red:hover span, button.jQuery-button_red_hover span {
+	background:url('red/button_left_over.png') left no-repeat; 
+}
+button.jQuery-button_red:active, button.jQuery-button_red_down {
+	background:url('red/button_right_down.png') right no-repeat; 
+}
+button.jQuery-button_red:active span, button.jQuery-button_red_down span {
+	background:url('red/button_left_down.png') left no-repeat; 
+}
+
+/*silver buttons*/
+button.jQuery-button_silver { 
+    background:url('silver/button_right.png') right no-repeat; 
+}
+button.jQuery-button_silver span { 
+    font-size:12px; 
+    height:25px; 
+    line-height:25px;
+    color:#000; 
+    background:url('silver/button_left.png') left no-repeat;
+}
+button.jQuery-button_silver:hover, button.jQuery-button_silver_hover {
+	background:url('silver/button_right_over.png') right no-repeat; 
+}
+button.jQuery-button_silver:hover span, button.jQuery-button_silver_hover span {
+	background:url('silver/button_left_over.png') left no-repeat; 
+}
+button.jQuery-button_silver:active, button.jQuery-button_silver_down {
+	background:url('silver/button_right_down.png') right no-repeat; 
+}
+button.jQuery-button_silver:active span, button.jQuery-button_silver_down span {
+	background:url('silver/button_left_down.png') left no-repeat; 
+}

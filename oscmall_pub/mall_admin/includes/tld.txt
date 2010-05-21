@@ -1,0 +1,32 @@
+#
+#  Copyright (c) 2003 SystemsManager.Net
+#  SystemsManager Technologies
+#  oscMall System Version 3
+#  http://www.systemsmanager.net
+#  
+#  Portions Copyright (c) 2003 osCommerce
+#  
+#  This source file is subject to version 2.0 of the GPL license,   
+#  that is bundled with this package in the file LICENSE. If you
+#  did not receive a copy of the oscMall System license and are unable 
+#  to obtain it through the world-wide-web, please send a note to    
+#  license@systemsmanager.net so we can mail you a copy immediately.
+#
+#
+# Original 7 TLDs
+com     # all are eligible to register
+edu     # degree-granting educational institutions of higher education
+gov     # United States Government
+int     # organizations established by international treaties
+mil     # United States Military
+net     # all are eligible to register
+org     # noncommercial community, all are eligible to register
+
+# Recent additions
+aero    # members of the air-transport industry
+biz     # businesses
+coop    # cooperative associations
+info    # all are eligible to register
+museum  # museums
+name    # individuals
+pro     # credentialed professionals

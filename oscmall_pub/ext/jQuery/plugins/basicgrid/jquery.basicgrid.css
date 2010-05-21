@@ -1,0 +1,314 @@
+#colSorter {
+    height:26px;
+    width:13px;
+    position:relative;
+    float:right;
+    vertical-align: middle;
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+	margin-right:5px;
+}
+#colExpander {
+    height:26px;
+    width:2px;
+    position:relative;
+    left: -4px;
+    float:left;
+	cursor: col-resize;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #fff;
+}
+#colMenu {
+    position: relative;
+    height: 24px;
+    width: 14px;
+    float: right;
+    z-index: 900;
+    background: #fafafa url(images/fhbg.gif) repeat-x bottom;
+    border: 0px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    top: 0px;
+    left: 0px;
+    margin-top: 1px;
+    cursor: pointer;
+}
+#colMenu div {
+    height: 24px;
+    width: 12px;
+    border-left: 1px solid #fff;
+    float: left;
+    background: url(images/ddn.png) no-repeat center;
+}		
+#colText {
+    position:relative;
+    float:left;
+    vertical-align: middle;
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+	padding-left:5px;
+}
+.basicGrid_headerSortDef {
+	background-image: url(images/def.gif);
+}
+.basicGrid_headerSortDown {
+	background-image: url(images/desc.gif);
+}
+.basicGrid_headerSortUp {
+	background-image: url(images/asc.gif);
+}
+.basicGrid {
+    background-color: white;
+    table-layout: fixed;
+    width:100%;
+}
+.basicGrid-container {
+    width:100%;
+    border: 1px solid #99BBE8;
+}
+.basicGrid_header {
+    padding: 0px;
+    text-align: left;
+    font-weight: bold;
+    color: #15428B;
+    height:26px;
+    line-height: 25px;
+    font-size: 14px;
+    padding-left: 5px;
+    background-image: url(images/grid-hrow.gif);
+    white-space: nowrap;
+}
+.basicGrid_header_over {
+    background-image: url(images/grid-hrow-over.gif);
+}
+.basicGrid_footer {
+    padding: 2px;
+    text-align: right;
+    font-weight: bold;
+    color: #15428B;
+    height:33px;
+    line-height: 18px;
+    font-size: 12px;
+    padding-left: 5px;
+    background-image: url(images/grid-hrow.gif);
+    width: 100%;
+}
+.basicGrid_hidden {
+    display: none;
+}
+.basicGrid_column  {
+    padding: 2px;
+    text-align: left;
+    border-bottom: 1px solid #DEECFD;
+    border-right: 1px solid #DEECFD;
+    font-size: 12px;
+    font-family: arial;
+    overflow: hidden;
+    white-space:nowrap;
+}
+.basicGrid_lastRow {
+    border-bottom: 1px solid #99BBE8;
+}
+.basicGrid_rowOver {
+    background: #DEECFD;
+    cursor: pointer;
+}
+.basicGrid_rowSelected {
+    background: #DEECFD;
+    cursor: pointer;
+}
+.basicGrid_rowOut {
+    background-color: white;
+}
+.basicGrid_window {
+    background-color: white;
+}
+.basicGrid_windowHeader {
+    padding: 2px;
+    text-align: center;
+    font-weight: bold;
+    color: #15428B;
+    height:20px;
+    font-size: 14px;
+    padding-left: 5px;
+    background-image: url(images/grid-hrow.gif);
+}
+.basicGrid_windowContent {
+    padding:10px;
+}
+.basicGrid_windowFooter {
+    padding: 2px;
+    text-align: center;
+    font-weight: bold;
+    color: #15428B;
+    height:25px;
+    font-size: 14px;
+    padding-left: 5px;
+    border-top: 1px solid #99BBE8;
+    background-image: url(images/grid-hrow.gif);
+}
+/* Pager Classes - BEGIN */
+.basicGrid_pager_container {
+    padding-top: 2px;
+    float:left;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.basicGrid_pager {
+    position: relative;
+    float:left;
+    white-space: nowrap;
+}
+.basicGrid_pager div.pageButton {
+    float: left;
+    width: 22px;
+    height: 22px;
+    border: 0px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.basicGrid_pager div.pageButton:hover {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #99BBE8;
+    cursor: pointer;
+}
+.basicGrid_pager div.pageButton.pageButtonOver {
+    width: 22px;
+    height: 22px;
+    border: 1px solid #99BBE8;
+    cursor: pointer;
+}
+.basicGrid_pager div.pageButton span {
+    width: 20px;
+    height: 20px;
+    display: block;
+    float: left;
+}		
+.basicGrid_pager div.pageButton:hover span {
+    width: 19px;
+    height: 19px;
+    border-top: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+}
+.basicGrid_pager div.pageButton.pageButtonOver span {
+    width: 20px;
+    height: 20px;
+    border-top: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+}
+.basicGrid_pager .pageStat, .basicGrid_pager .pageControl {
+    position: relative;
+    top: 5px;
+    overflow: visible;
+}
+.basicGrid_pager input {
+    vertical-align: text-top;
+    position: relative;
+    top: -3px;
+}
+.basicGrid_pager select {
+    vertical-align: middle;
+    position: relative;
+    top: 2px;
+}
+.basicGrid_pager #group {
+    float: left;
+    background: none;
+    height: 24px;
+    margin: 0px 5px;
+    white-space: nowrap;
+}
+.basicGrid_pager #reload {
+    cursor: pointer;
+    background: url(images/load.png) no-repeat center;
+}
+.basicGrid_pager #reload.loading {
+    cursor: pointer;
+    background: url(images/load.gif) no-repeat center;
+}
+.basicGrid_pager #first {
+    cursor: pointer;
+    background: url(images/page-first.gif) no-repeat center;
+}
+.basicGrid_pager #prev {
+    cursor: pointer;
+    background: url(images/page-prev.gif) no-repeat center;
+}
+.basicGrid_pager #last {
+    cursor: pointer;
+    background: url(images/page-last.gif) no-repeat center;
+}
+.basicGrid_pager #next {
+    cursor: pointer;
+    background: url(images/page-next.gif) no-repeat center;
+}
+.basicGrid_pager #next.disabled {
+    background: url(images/page-next-disabled.gif) no-repeat center;
+    cursor: default;
+}
+.basicGrid_pager #prev.disabled {
+    background: url(images/page-prev-disabled.gif) no-repeat center;
+    cursor: default;
+}
+.basicGrid_pager #btnseparator {
+	float: left;
+	height: 22px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #fff;
+	margin: 1px;
+}
+.basicGrid_ajaxLoader {
+    background: url(images/ajax-loader.gif) #FFFFFF no-repeat;
+    background-position: 50% 50%;
+}
+/* Pager Classes - END */
+/* Resizer Classes - BEGIN */
+.basicGrid-container .vGrip {
+    height: 5px;
+    overflow: hidden;
+    position: relative;
+    background: #fafafa url(images/wbg.gif) repeat-x 0px -1px;
+    border: 1px solid #ccc;
+    border-top: 0px;
+    text-align: center;
+    cursor: row-resize;
+}
+.basicGrid-container .vGrip span {
+    display: block;
+    margin: 1px auto;
+    width: 20px;
+    height: 1px;
+    overflow: hidden;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;	
+    background: none;
+}
+/* Resizer Classes - END */
+/* Column Control Classes - BEGIN */
+.basicGrid_columnMenu td {
+    padding: 2px 3px;
+    border: 1px solid #eee;
+    cursor: default;
+}
+.basicGrid_columnMenu tr:hover td, .basicGrid_columnMenu tr.ndcolover td {
+    background: #d5effc url(images/hl.png) repeat-x top;
+    border: 1px solid #a8d8eb;
+}
+.basicGrid_columnMenu td.ndcol1 {
+    border-right: 1px solid #ccc;
+}
+.basicGrid_columnMenu td.ndcol2 {
+    border-left: 1px solid #fff;
+    padding-right: 10px;
+}
+.basicGrid_columnMenu tr:hover td.ndcol1, .basicGrid_columnMenu tr.ndcolover td.ndcol1 {
+    border-right: 1px solid #d2e3ec;
+}
+.basicGrid_columnMenu tr:hover td.ndcol2, .basicGrid_columnMenu tr.ndcolover td.ndcol2 {
+    border-left: 1px solid #eef8ff;
+}
+/* Column Control Classes - END */
+			

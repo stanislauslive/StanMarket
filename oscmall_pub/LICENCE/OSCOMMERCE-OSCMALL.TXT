@@ -1,0 +1,42 @@
+The osCommerce/oscMall Project
+
+The oscMall System is released under the GNU General Public License, we enforce our copyright
+rights concerning the oscMall solution fully. While you have considerable freedom to
+modify and redistribute the oscMall system, there are conditions placed on the oscMall copyright
+notices which also comply with the osCommerce copyright conditions and the GNU General Public License.
+
+All source code must retain and have displayed all copyright notices at all times found
+in each file, this includes all derivative works associated with the oscMall System.
+
+The osCommerce/oscMall copyright announcement displayed on the Administration Tool of the
+oscMall system complies with section 2c of the GNU General Public License (GPL) and thus
+can not be removed, and may only be appropriately modified if changes have been made to
+the administration portion of the oscMall System.
+
+It is not the intention of the osCommerce or oscMall Administration Tool copyright announcement
+to claim any additional rights or contest rights to work written entirely by others. The
+intent is to exercise the right to control the distribution of derivative or collective works
+based on the oscMall System.
+
+It is entirely within your right however to add to the copyright notice to claim rights
+on any of the changes you have made.
+
+The oscMall copyright announcement displayed on the Catalog portion of the oscMall system
+can be modified, and even removed, if the layout of the site theme has been modified to
+distinguish itself from the default oscMall copyrighted theme. This complies with the
+osCommerce posted copyright rules.
+
+Please note that the complete oscMall and osCommerce Administration Tool copyright announcements
+must still exist unmodified regardless if the default oscMall or osCommerce copyrighted Administration
+Tool theme has been modified to any extent.
+
+The oscMall System has no affiliations with the osCommerce Project other then to use the GNU General Public License
+code base in development of the oscMall System, and fully supports the osCommerce copyright notices and
+requirements placed on/in the oscMall System.
+
+
+We reserve the right to make modifications and/or changes to this notice at anytime and all work associated with the notice.
+
+
+
+

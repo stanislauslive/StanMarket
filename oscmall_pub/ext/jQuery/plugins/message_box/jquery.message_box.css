@@ -1,0 +1,116 @@
+/* Error Box - BEGIN */
+.message_box_error_container {
+    background-color: #cbddf3;
+    border: 1px solid black;
+}
+
+.message_box_error_header {
+    padding: 2px;
+    padding-left: 5px;
+    font-weight: bold;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+    color: #000000;
+    height: 15px;
+}
+
+.message_box_error_content {
+    padding: 10px;
+    color: #000000;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+}
+
+.message_box_error_footer {
+    text-align: center;
+    padding: 3px;
+}
+/* Error Box - END */
+
+/* Warning Box - BEGIN */
+.message_box_warning_container {
+    background-color: #cbddf3;
+    border: 1px solid black;
+}
+
+.message_box_warning_header {
+    padding: 2px;
+    padding-left: 5px;
+    font-weight: bold;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+    color: #000000;
+    height: 15px;
+}
+
+.message_box_warning_content {
+    padding: 10px;
+    color: #000000;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+}
+
+.message_box_warning_footer {
+    text-align: center;
+    padding: 3px;
+}
+/* Warning Box - END */
+
+
+/* Progress Box - BEGIN */
+.message_box_progress_container {
+    background-color: #cbddf3;
+    border: 1px solid black;
+}
+
+.message_box_progress_header {
+    padding: 2px;
+    padding-left: 5px;
+    font-weight: bold;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+    color: #000000;
+    height: 15px;
+}
+
+.message_box_progress_content {
+    padding: 10px;
+    color: #000000;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+}
+
+.message_box_progress_footer {
+    text-align: center;
+    padding: 3px;
+}
+/* Progress Box - END */
+
+/* Login Box - BEGIN */
+.message_box_login_container {
+    background-color: #cbddf3;
+    border: 1px solid black;
+}
+
+.message_box_login_header {
+    padding: 2px;
+    padding-left: 5px;
+    font-weight: bold;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+    color: #000000;
+    height: 15px;
+}
+
+.message_box_login_content {
+    padding: 10px;
+    color: #000000;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+}
+
+.message_box_login_footer {
+    text-align: center;
+    padding: 3px;
+}
+/* Login Box - END */

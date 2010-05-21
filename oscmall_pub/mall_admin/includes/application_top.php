@@ -360,6 +360,10 @@ if (smn_session_is_registered('login_id')) {
   require('../includes/classes/jQuery.php');
   $jQuery = new jQuery();
   $jQuery->loadAllExtensions();
-  $jQuery->loadAllPlugins();
+  $jQuery->loadAllPlugins(); 
+
+// 
+//   This define('JQUERY_MENU', 'jd_menu'); ( which will be moved into the database ) has 2 values currently: jd_menu or ??//    accordion
+define('JQUERY_MENU', 'jd_menu');
   
 ?>
